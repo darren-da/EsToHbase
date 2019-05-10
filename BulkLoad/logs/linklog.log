@@ -1,0 +1,1281 @@
+@@ | 2019-04-17 16:57:51,226 | 529  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 16:57:51,259 | 562  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 40536 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 16:57:51,260 | 563  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 16:57:51,310 | 613  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 16:57:51 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 16:57:53,718 | 3021 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-17 16:57:53,723 | 3026 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-17 16:57:54,512 | 3815 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-17 16:57:54,525 | 3828 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 16:57:54,962 | 4265 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 16:59:09,589 | 525  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 16:59:09,618 | 554  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 52108 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 16:59:09,619 | 555  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 16:59:09,660 | 596  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 16:59:09 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 16:59:13,057 | 3993 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-17 16:59:13,058 | 3994 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-17 16:59:13,570 | 4506 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-17 16:59:13,574 | 4510 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 16:59:13,939 | 4875 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 17:15:39,848 | 552  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 17:15:39,883 | 587  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 40788 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 17:15:39,883 | 587  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 17:15:39,929 | 633  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 17:15:39 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 17:15:44,499 | 5203 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-17 17:15:44,500 | 5204 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-17 17:15:45,002 | 5706 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-17 17:15:45,007 | 5711 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 17:15:45,362 | 6066 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 17:16:38,297 | 521  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 17:16:38,330 | 554  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 35024 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 17:16:38,330 | 554  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 17:16:38,370 | 594  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 17:16:38 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 17:16:39,651 | 1875 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-17 17:16:39,653 | 1877 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2013 目录已创建！ 
+@@ | 2019-04-17 17:16:40,159 | 2383 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2013 已创建！ 
+@@ | 2019-04-17 17:16:40,164 | 2388 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 17:16:40,532 | 2756 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 17:16:55,304 | 17528 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2713-2013-01-01.txt 文件已创建！ 
+@@ | 2019-04-17 17:16:55,404 | 17628 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:17:03,679 | 25903 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:17:15,645 | 37869 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:18:03,000 | 508  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 17:18:03,021 | 529  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 12508 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 17:18:03,022 | 530  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 17:18:03,060 | 568  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 17:18:03 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 17:18:15,173 | 12681 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-17 17:18:15,175 | 12683 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-17 17:18:15,708 | 13216 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-17 17:18:15,713 | 13221 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 17:18:16,085 | 13593 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 17:20:42,638 | 526  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 17:20:42,673 | 561  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 68588 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 17:20:42,673 | 561  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 17:20:42,712 | 600  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 17:20:42 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 17:20:44,703 | 2591 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-17 17:20:44,703 | 2591 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2013 目录已创建！ 
+@@ | 2019-04-17 17:20:45,226 | 3114 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2013 已创建！ 
+@@ | 2019-04-17 17:20:45,230 | 3118 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 17:20:45,594 | 3482 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 17:21:00,481 | 18369 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:21:18,116 | 36004 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:21:26,567 | 44455 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:21:30,325 | 48213 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:21:42,878 | 60766 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:21:58,527 | 76415 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:22:06,618 | 84506 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:22:15,350 | 93238 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:22:27,652 | 105540 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:22:42,661 | 120549 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:22:54,229 | 132117 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:23:08,369 | 146257 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:23:25,584 | 163472 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:23:41,554 | 179442 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:23:55,399 | 193287 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 15 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:24:08,231 | 206119 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 16 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:24:15,620 | 213508 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 17 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:24:30,822 | 228710 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 18 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:24:45,038 | 242926 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 19 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:24:59,803 | 257691 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 20 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:24:59,803 | 257691 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713 ============ 2013-01-01插入完成  ============ 
+@@ | 2019-04-17 17:24:59,804 | 257692 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -成功数:3584160 ,失败数:0 ,无值的tag数:1400 ,当前时间未创建的tag数:0 ,失败的tag数:0 
+@@ | 2019-04-17 17:25:27,720 | 285608 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2013/2713-2013-01-01.txt 
+@@ | 2019-04-17 17:25:27,721 | 285609 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -本地路径下 /home/hbase/data/2013/2713-2013-01-01.txt 已删除！ 
+@@ | 2019-04-17 17:25:39,241 | 297129 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2713-2013-01-02.txt 文件已创建！ 
+@@ | 2019-04-17 17:25:39,326 | 297214 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:25:58,054 | 315942 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:26:14,319 | 332207 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:26:19,742 | 337630 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:26:34,340 | 352228 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:26:49,152 | 367040 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:26:53,561 | 371449 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:27:05,145 | 383033 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:27:19,131 | 397019 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:27:31,596 | 409484 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:27:44,558 | 422446 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:27:54,218 | 432106 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:28:10,132 | 448020 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:28:24,469 | 462357 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:28:45,052 | 482940 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 15 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:28:55,916 | 493804 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 16 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:29:03,374 | 501262 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 17 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:29:15,519 | 513407 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 18 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:29:32,243 | 530131 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 19 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:29:45,808 | 543696 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-02 ===== ,第 20 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:29:45,808 | 543696 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713 ============ 2013-01-02插入完成  ============ 
+@@ | 2019-04-17 17:29:45,808 | 543696 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -成功数:7079040 ,失败数:0 ,无值的tag数:2862 ,当前时间未创建的tag数:0 ,失败的tag数:0 
+@@ | 2019-04-17 17:30:08,820 | 566708 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2013/2713-2013-01-02.txt 
+@@ | 2019-04-17 17:30:08,867 | 566755 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -本地路径下 /home/hbase/data/2013/2713-2013-01-02.txt 已删除！ 
+@@ | 2019-04-17 17:30:21,117 | 579005 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2713-2013-01-03.txt 文件已创建！ 
+@@ | 2019-04-17 17:30:21,200 | 579088 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:30:35,182 | 593070 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:30:49,783 | 607671 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:30:59,272 | 617160 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:31:09,969 | 627857 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:31:22,652 | 640540 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:31:33,674 | 651562 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:31:38,397 | 656285 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:31:57,330 | 675218 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:32:11,189 | 689077 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:32:24,341 | 702229 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:32:36,751 | 714639 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:32:45,606 | 723494 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:32:57,753 | 735641 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:33:11,076 | 748964 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 15 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:33:23,231 | 761119 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 16 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:33:31,330 | 769218 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 17 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:33:44,141 | 782029 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 18 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:33:57,230 | 795118 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 19 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:34:20,473 | 818361 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-03 ===== ,第 20 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:34:20,474 | 818362 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713 ============ 2013-01-03插入完成  ============ 
+@@ | 2019-04-17 17:34:20,474 | 818362 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -成功数:10596960 ,失败数:0 ,无值的tag数:4308 ,当前时间未创建的tag数:0 ,失败的tag数:0 
+@@ | 2019-04-17 17:34:44,120 | 842008 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2013/2713-2013-01-03.txt 
+@@ | 2019-04-17 17:34:44,121 | 842009 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -本地路径下 /home/hbase/data/2013/2713-2013-01-03.txt 已删除！ 
+@@ | 2019-04-17 17:35:01,718 | 859606 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2713-2013-01-04.txt 文件已创建！ 
+@@ | 2019-04-17 17:35:01,830 | 859718 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:35:16,899 | 874787 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:35:27,597 | 885485 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:35:33,678 | 891566 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:35:49,880 | 907768 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:36:06,895 | 924783 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:36:11,448 | 929336 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:36:17,221 | 935109 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:36:29,404 | 947292 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:36:40,545 | 958433 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:36:56,269 | 974157 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:37:03,559 | 981447 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:37:24,442 | 1002330 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:37:36,128 | 1014016 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:37:55,240 | 1033128 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 15 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:38:08,638 | 1046526 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 16 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:38:15,874 | 1053762 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 17 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:38:30,347 | 1068235 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 18 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:38:44,054 | 1081942 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 19 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:39:07,122 | 1105010 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-04 ===== ,第 20 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:39:07,122 | 1105010 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713 ============ 2013-01-04插入完成  ============ 
+@@ | 2019-04-17 17:39:07,122 | 1105010 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -成功数:14088960 ,失败数:0 ,无值的tag数:5772 ,当前时间未创建的tag数:0 ,失败的tag数:0 
+@@ | 2019-04-17 17:39:30,471 | 1128359 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2013/2713-2013-01-04.txt 
+@@ | 2019-04-17 17:39:30,521 | 1128409 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -本地路径下 /home/hbase/data/2013/2713-2013-01-04.txt 已删除！ 
+@@ | 2019-04-17 17:39:43,474 | 1141362 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2713-2013-01-05.txt 文件已创建！ 
+@@ | 2019-04-17 17:39:43,560 | 1141448 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:39:56,967 | 1154855 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:40:09,973 | 1167861 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:40:16,029 | 1173917 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:40:27,950 | 1185838 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:40:42,903 | 1200791 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:40:53,992 | 1211880 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:40:59,748 | 1217636 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:41:25,934 | 1243822 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:41:34,169 | 1252057 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:41:48,552 | 1266440 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:41:57,507 | 1275395 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:42:17,504 | 1295392 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:42:31,361 | 1309249 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:42:43,410 | 1321298 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 15 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:42:57,829 | 1335717 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 16 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:43:03,919 | 1341807 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-05 ===== ,第 17 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:43:14,390 | 522  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 17:43:14,426 | 558  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 82192 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 17:43:14,427 | 559  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 17:43:14,477 | 609  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 17:43:14 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 17:43:16,320 | 2452 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-17 17:43:16,321 | 2453 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2013 目录已创建！ 
+@@ | 2019-04-17 17:43:16,823 | 2955 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2013 已创建！ 
+@@ | 2019-04-17 17:43:16,828 | 2960 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-17 17:43:17,202 | 3334 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-17 17:43:29,296 | 15428 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:43:38,833 | 24965 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:43:49,362 | 35494 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:43:55,285 | 41417 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:44:10,383 | 56515 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:44:25,905 | 72037 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:44:30,811 | 76943 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:44:35,579 | 81711 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:44:52,104 | 98236 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:45:09,738 | 115870 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-04-17 17:45:23,169 | 129301 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-04-17 23:38:12,410 | 1282 | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-17 23:38:12,550 | 1422 | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 20532 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-17 23:38:12,550 | 1422 | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-17 23:38:12,644 | 1516 | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 23:38:12 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 23:38:35,519 | 24391 | [main] | ERROR | o.a.tomcat.jdbc.pool.ConnectionPool | -Unable to create initial connections of pool. 
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:718)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:650)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:468)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:143)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:394)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:474)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:484)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:510)
+	at com.bl.run.DataController.sendData(DataController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	... 49 common frames omitted
+@@ | 2019-04-17 23:38:35,753 | 24625 | [main] | INFO  | o.s.j.e.a.AnnotationMBeanExporter | -Registering beans for JMX exposure on startup 
+@@ | 2019-04-17 23:38:35,784 | 24656 | [main] | INFO  | com.bl.EsToHDFS | -Started EsToHDFS in 24.344 seconds (JVM running for 26.615) 
+@@ | 2019-04-17 23:38:35,784 | 24656 | [Thread-50] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 17 23:38:12 CST 2019]; root of context hierarchy 
+@@ | 2019-04-17 23:38:35,784 | 24656 | [Thread-50] | INFO  | o.s.j.e.a.AnnotationMBeanExporter | -Unregistering JMX-exposed beans on shutdown 
+@@ | 2019-04-23 14:41:46,067 | 611  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 14:41:46,101 | 645  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 11244 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 14:41:46,110 | 654  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 14:41:46,155 | 699  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Tue Apr 23 14:41:46 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 14:41:47,690 | 2234 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 14:41:47,768 | 2312 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 14:41:59,631 | 14175 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 14:41:59,676 | 14220 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 14:46:07,606 | 583  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 14:46:07,631 | 608  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 49336 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 14:46:07,632 | 609  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 14:46:07,684 | 661  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 14:46:07 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 14:46:09,051 | 2028 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 14:46:09,052 | 2029 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 14:46:09,303 | 2280 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 14:46:09,321 | 2298 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 14:48:54,064 | 537  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 14:48:54,096 | 569  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 10332 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 14:48:54,096 | 569  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 14:48:54,142 | 615  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 14:48:54 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 14:48:55,551 | 2024 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-23 14:48:55,552 | 2025 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2015 目录已创建！ 
+@@ | 2019-04-23 14:48:55,796 | 2269 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 14:48:55,813 | 2286 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:02:11,907 | 519  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:02:11,941 | 553  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 4780 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:02:11,942 | 554  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:02:11,988 | 600  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:02:11 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:02:13,487 | 2099 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:02:13,488 | 2100 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:02:24,753 | 13365 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:02:24,795 | 13407 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:07:19,694 | 579  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:07:19,735 | 620  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 18888 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:07:19,735 | 620  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:07:19,788 | 673  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:07:19 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:07:21,242 | 2127 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:07:21,243 | 2128 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:07:21,482 | 2367 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:07:21,498 | 2383 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:18:14,270 | 495  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:18:14,308 | 533  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 36252 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:18:14,309 | 534  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:18:14,358 | 583  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:18:14 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:18:15,782 | 2007 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:18:15,783 | 2008 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:18:27,033 | 13258 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:18:27,075 | 13300 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:19:32,033 | 508  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:19:32,071 | 546  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 32944 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:19:32,072 | 547  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:19:32,121 | 596  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:19:32 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:19:33,662 | 2137 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:19:33,663 | 2138 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:19:33,916 | 2391 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:19:33,933 | 2408 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:22:09,066 | 529  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:22:09,102 | 565  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 40428 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:22:09,103 | 566  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:22:09,152 | 615  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:22:09 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:22:10,545 | 2008 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:22:10,546 | 2009 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:22:10,790 | 2253 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:22:10,807 | 2270 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:23:02,623 | 572  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:23:02,658 | 607  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 41172 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:23:02,659 | 608  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:23:02,706 | 655  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:23:02 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:23:04,192 | 2141 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:23:04,193 | 2142 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:23:04,444 | 2393 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:23:04,460 | 2409 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:30:25,795 | 534  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:30:25,839 | 578  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 49800 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:30:25,840 | 579  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:30:25,887 | 626  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:30:25 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:30:27,459 | 2198 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:30:27,460 | 2199 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:30:38,720 | 13459 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:30:38,768 | 13507 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:33:29,014 | 509  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:33:29,047 | 542  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 56000 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:33:29,048 | 543  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:33:29,092 | 587  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:33:29 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:33:30,479 | 1974 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:33:30,479 | 1974 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:33:30,726 | 2221 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:33:30,743 | 2238 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:43:19,139 | 507  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:43:19,171 | 539  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 68256 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:43:19,172 | 540  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:43:19,216 | 584  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:43:19 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:43:20,688 | 2056 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:43:20,689 | 2057 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:43:20,937 | 2305 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:43:20,954 | 2322 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:55:45,766 | 529  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:55:45,799 | 562  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 78656 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:55:45,799 | 562  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:55:45,850 | 613  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:55:45 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:55:47,272 | 2035 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:55:47,273 | 2036 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:55:58,533 | 13296 | [main] | WARN  | o.s.c.a.AnnotationConfigApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError 
+@@ | 2019-04-23 15:55:58,575 | 13338 | [main] | ERROR | o.s.boot.SpringApplication | -Application startup failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataController': Invocation of init method failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.bl.run.DataController.sendData(DataController.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.net.UnknownHostException: node2.gh.swc.hdp
+	at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:378)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createNonHAProxy(NameNodeProxies.java:310)
+	at org.apache.hadoop.hdfs.NameNodeProxies.createProxy(NameNodeProxies.java:176)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:678)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:149)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2653)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:92)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2687)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2669)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:371)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:170)
+	at com.bl.put.HDFSUtil.<clinit>(HDFSUtil.java:31)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: node2.gh.swc.hdp
+	... 38 common frames omitted
+@@ | 2019-04-23 15:59:47,191 | 497  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 15:59:47,236 | 542  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 56892 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 15:59:47,237 | 543  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 15:59:47,290 | 596  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 15:59:47 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 15:59:48,809 | 2115 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-23 15:59:48,810 | 2116 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-23 15:59:49,302 | 2608 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-23 15:59:49,307 | 2613 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-23 15:59:49,789 | 3095 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-23 16:01:17,321 | 541  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 16:01:17,357 | 577  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 66252 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 16:01:17,358 | 578  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 16:01:17,408 | 628  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 16:01:17 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 16:01:18,841 | 2061 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-23 16:01:18,843 | 2063 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2013 目录已创建！ 
+@@ | 2019-04-23 16:01:19,338 | 2558 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2013 已创建！ 
+@@ | 2019-04-23 16:01:19,342 | 2562 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-23 16:01:19,713 | 2933 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-23 16:01:44,133 | 27353 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-23 16:02:12,232 | 55452 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2013-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-23 16:11:15,930 | 507  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 16:11:15,960 | 537  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 81356 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 16:11:15,960 | 537  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 16:11:16,013 | 590  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 16:11:16 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 16:11:17,490 | 2067 | [main] | INFO  | com.bl.run.DataController | -电厂:2707 查询天数:365 查询测点数:5162 
+@@ | 2019-04-23 16:11:17,491 | 2068 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2015 目录已创建！ 
+@@ | 2019-04-23 16:11:17,990 | 2567 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2015 已创建！ 
+@@ | 2019-04-23 16:11:17,995 | 2572 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:26 
+@@ | 2019-04-23 16:11:18,376 | 2953 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-23 16:12:00,562 | 45139 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2707-2015-01-01.txt 文件已创建！ 
+@@ | 2019-04-23 16:13:14,605 | 540  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 16:13:14,635 | 570  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 82836 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 16:13:14,636 | 571  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 16:13:14,687 | 622  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Tue Apr 23 16:13:14 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 16:13:16,054 | 1989 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-23 16:13:16,055 | 1990 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2015 目录已创建！ 
+@@ | 2019-04-23 16:13:16,549 | 2484 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2015 已创建！ 
+@@ | 2019-04-23 16:13:16,554 | 2489 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-23 16:13:16,927 | 2862 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-23 16:13:38,376 | 24311 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2015-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-23 16:13:59,211 | 45146 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2015-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-23 22:46:45,991 | 1201 | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-23 22:46:46,178 | 1388 | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 8420 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-23 22:46:46,178 | 1388 | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-23 22:46:46,334 | 1544 | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Tue Apr 23 22:46:46 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 22:47:09,255 | 24465 | [main] | ERROR | o.a.tomcat.jdbc.pool.ConnectionPool | -Unable to create initial connections of pool. 
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:718)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:650)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:468)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:143)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:394)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:474)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:484)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:510)
+	at com.bl.run.DataController.sendData(DataController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.bl.EsToHDFS.main(EsToHDFS.java:14)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	... 49 common frames omitted
+@@ | 2019-04-23 22:47:09,567 | 24777 | [main] | INFO  | o.s.j.e.a.AnnotationMBeanExporter | -Registering beans for JMX exposure on startup 
+@@ | 2019-04-23 22:47:09,613 | 24823 | [main] | INFO  | com.bl.EsToHDFS | -Started EsToHDFS in 24.262 seconds (JVM running for 29.505) 
+@@ | 2019-04-23 22:47:09,613 | 24823 | [Thread-51] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Tue Apr 23 22:46:46 CST 2019]; root of context hierarchy 
+@@ | 2019-04-23 22:47:09,613 | 24823 | [Thread-51] | INFO  | o.s.j.e.a.AnnotationMBeanExporter | -Unregistering JMX-exposed beans on shutdown 
+@@ | 2019-04-24 18:37:46,890 | 1228 | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-24 18:37:47,015 | 1353 | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 34088 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-24 18:37:47,015 | 1353 | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-24 18:37:47,138 | 1476 | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 24 18:37:47 CST 2019]; root of context hierarchy 
+@@ | 2019-04-24 18:37:49,592 | 3930 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-24 18:37:49,605 | 3943 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-24 18:37:50,139 | 4477 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-24 18:37:50,224 | 4562 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-24 18:37:50,613 | 4951 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-24 18:41:43,376 | 485  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-24 18:41:43,409 | 518  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 45560 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-24 18:41:43,410 | 519  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-24 18:41:43,461 | 570  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 24 18:41:43 CST 2019]; root of context hierarchy 
+@@ | 2019-04-24 18:41:44,897 | 2006 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-24 18:41:44,897 | 2006 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-24 18:41:45,399 | 2508 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-24 18:41:45,403 | 2512 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-24 18:41:45,774 | 2883 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-24 18:42:23,746 | 545  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-24 18:42:23,783 | 582  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 48288 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-24 18:42:23,784 | 583  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-24 18:42:23,833 | 632  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 24 18:42:23 CST 2019]; root of context hierarchy 
+@@ | 2019-04-24 18:42:25,589 | 2388 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-24 18:42:25,590 | 2389 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2015 目录已创建！ 
+@@ | 2019-04-24 18:42:26,152 | 2951 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2015 已创建！ 
+@@ | 2019-04-24 18:42:26,156 | 2955 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-24 18:42:26,535 | 3334 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-24 19:20:42,291 | 566  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-24 19:20:42,328 | 603  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 14128 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-24 19:20:42,329 | 604  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-24 19:20:42,369 | 644  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 24 19:20:42 CST 2019]; root of context hierarchy 
+@@ | 2019-04-24 19:20:43,766 | 2041 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-24 19:20:43,767 | 2042 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2015 目录已创建！ 
+@@ | 2019-04-24 19:20:44,273 | 2548 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2015 已创建！ 
+@@ | 2019-04-24 19:20:44,277 | 2552 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-24 19:20:44,660 | 2935 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-24 19:23:25,468 | 530  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-24 19:23:25,508 | 570  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 52908 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-24 19:23:25,509 | 571  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-24 19:23:25,555 | 617  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Wed Apr 24 19:23:25 CST 2019]; root of context hierarchy 
+@@ | 2019-04-24 19:23:28,983 | 4045 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-24 19:23:28,986 | 4048 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2016 目录已创建！ 
+@@ | 2019-04-24 19:23:29,493 | 4555 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2016 已创建！ 
+@@ | 2019-04-24 19:23:29,497 | 4559 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-24 19:23:29,869 | 4931 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-25 09:44:27,872 | 1564 | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-25 09:44:28,082 | 1774 | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 19828 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-25 09:44:28,083 | 1775 | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-25 09:44:28,646 | 2338 | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Thu Apr 25 09:44:28 CST 2019]; root of context hierarchy 
+@@ | 2019-04-25 09:44:30,752 | 4444 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-25 09:44:30,759 | 4451 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2016 目录已创建！ 
+@@ | 2019-04-25 09:44:33,058 | 6750 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2016 已创建！ 
+@@ | 2019-04-25 09:44:33,070 | 6762 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-25 09:44:34,074 | 7766 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-25 09:47:34,363 | 495  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-25 09:47:34,406 | 538  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 22292 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-25 09:47:34,407 | 539  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-25 09:47:34,454 | 586  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Apr 25 09:47:34 CST 2019]; root of context hierarchy 
+@@ | 2019-04-25 09:47:35,911 | 2043 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-25 09:47:35,964 | 2096 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2018 目录已创建！ 
+@@ | 2019-04-25 09:47:36,500 | 2632 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2018 已创建！ 
+@@ | 2019-04-25 09:47:36,504 | 2636 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-25 09:47:36,886 | 3018 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-25 09:51:27,197 | 532  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-25 09:51:27,225 | 560  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 24168 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-25 09:51:27,226 | 561  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-25 09:51:27,276 | 611  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Apr 25 09:51:27 CST 2019]; root of context hierarchy 
+@@ | 2019-04-25 09:51:28,706 | 2041 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-25 09:51:28,707 | 2042 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2018 目录已创建！ 
+@@ | 2019-04-25 09:51:29,236 | 2571 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2018 已创建！ 
+@@ | 2019-04-25 09:51:29,240 | 2575 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-25 09:51:29,616 | 2951 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-25 09:52:18,248 | 573  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-25 09:52:18,278 | 603  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 24456 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-25 09:52:18,278 | 603  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-25 09:52:18,322 | 647  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Apr 25 09:52:18 CST 2019]; root of context hierarchy 
+@@ | 2019-04-25 09:52:19,789 | 2114 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-25 09:52:19,790 | 2115 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2018 目录已创建！ 
+@@ | 2019-04-25 09:52:20,290 | 2615 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2018 已创建！ 
+@@ | 2019-04-25 09:52:20,294 | 2619 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-25 09:52:20,663 | 2988 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-25 09:59:11,968 | 414293 | [main] | ERROR | c.bl.source.invert.DayManyQueryData | -重试次数到达上限,次数:10 ,state:1 ,items.length:1 ,size:288000 
+@@ | 2019-04-25 09:59:12,011 | 414336 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-25 10:09:47,878 | 559  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-25 10:09:47,917 | 598  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 30820 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-25 10:09:47,917 | 598  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-25 10:09:47,977 | 658  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Apr 25 10:09:47 CST 2019]; root of context hierarchy 
+@@ | 2019-04-25 10:09:49,343 | 2024 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-25 10:09:49,344 | 2025 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2018 目录已创建！ 
+@@ | 2019-04-25 10:09:49,847 | 2528 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2018 已创建！ 
+@@ | 2019-04-25 10:09:49,851 | 2532 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-25 10:09:50,244 | 2925 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-25 10:10:05,684 | 18365 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-25 10:10:15,364 | 28045 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-26 13:55:12,339 | 637  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-26 13:55:12,384 | 682  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 56736 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-26 13:55:12,385 | 683  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-26 13:55:12,441 | 739  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Fri Apr 26 13:55:12 CST 2019]; root of context hierarchy 
+@@ | 2019-04-26 13:55:13,830 | 2128 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-26 13:55:13,830 | 2128 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-26 13:55:14,367 | 2665 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-26 13:55:14,372 | 2670 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-26 13:55:14,785 | 3083 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-26 13:56:49,404 | 97702 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2012-01-02 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-26 13:57:42,636 | 150934 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2012-01-02 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-26 13:58:44,972 | 213270 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2012-01-02 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-04-26 13:59:02,043 | 551  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-26 13:59:02,079 | 587  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 66532 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-26 13:59:02,080 | 588  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-26 13:59:02,128 | 636  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Fri Apr 26 13:59:02 CST 2019]; root of context hierarchy 
+@@ | 2019-04-26 13:59:03,563 | 2071 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-26 13:59:03,564 | 2072 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-26 13:59:04,075 | 2583 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-26 13:59:04,079 | 2587 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-26 13:59:04,497 | 3005 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-26 14:21:21,067 | 572  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-26 14:21:21,101 | 606  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 43848 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-26 14:21:21,101 | 606  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-26 14:21:21,160 | 665  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Fri Apr 26 14:21:21 CST 2019]; root of context hierarchy 
+@@ | 2019-04-26 14:21:22,641 | 2146 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:366 查询测点数:3889 
+@@ | 2019-04-26 14:21:22,642 | 2147 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-26 14:21:23,156 | 2661 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-26 14:21:23,160 | 2665 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-26 14:21:23,562 | 3067 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-26 14:43:21,198 | 1320703 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2012-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-04-26 14:59:22,716 | 2282221 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2713===== 2012-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-04-28 15:35:51,546 | 582  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-28 15:35:51,581 | 617  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 48148 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-28 15:35:51,581 | 617  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-28 15:35:51,639 | 675  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Sun Apr 28 15:35:51 CST 2019]; root of context hierarchy 
+@@ | 2019-04-28 15:35:53,134 | 2170 | [main] | INFO  | com.bl.run.DataController | -电厂:2707 查询天数:364 查询测点数:5162 
+@@ | 2019-04-28 15:35:53,134 | 2170 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2014 目录已创建！ 
+@@ | 2019-04-28 15:35:53,668 | 2704 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2014 已创建！ 
+@@ | 2019-04-28 15:35:53,673 | 2709 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:26 
+@@ | 2019-04-28 15:35:54,247 | 3283 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-28 15:47:16,312 | 648  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-28 15:47:16,350 | 686  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 65312 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-28 15:47:16,350 | 686  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-28 15:47:16,414 | 750  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Sun Apr 28 15:47:16 CST 2019]; root of context hierarchy 
+@@ | 2019-04-28 15:47:18,213 | 2549 | [main] | INFO  | com.bl.run.DataController | -电厂:2713 查询天数:365 查询测点数:3889 
+@@ | 2019-04-28 15:47:18,214 | 2550 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-28 15:47:18,834 | 3170 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-28 15:47:18,839 | 3175 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:20 
+@@ | 2019-04-28 15:47:19,469 | 3805 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-28 15:49:28,095 | 669  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-28 15:49:28,126 | 700  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 64464 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-28 15:49:28,126 | 700  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-28 15:49:28,202 | 776  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Sun Apr 28 15:49:28 CST 2019]; root of context hierarchy 
+@@ | 2019-04-28 15:49:30,056 | 2630 | [main] | INFO  | com.bl.run.DataController | -电厂:2707 查询天数:365 查询测点数:5162 
+@@ | 2019-04-28 15:49:30,057 | 2631 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2012 目录已创建！ 
+@@ | 2019-04-28 15:49:30,608 | 3182 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2012 已创建！ 
+@@ | 2019-04-28 15:49:30,613 | 3187 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:26 
+@@ | 2019-04-28 15:49:31,174 | 3748 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-04-28 15:50:08,726 | 574  | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-04-28 15:50:08,776 | 624  | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 70580 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-04-28 15:50:08,777 | 625  | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-04-28 15:50:08,832 | 680  | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Sun Apr 28 15:50:08 CST 2019]; root of context hierarchy 
+@@ | 2019-04-28 15:50:10,434 | 2282 | [main] | INFO  | com.bl.run.DataController | -电厂:2707 查询天数:364 查询测点数:5162 
+@@ | 2019-04-28 15:50:10,435 | 2283 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2014 目录已创建！ 
+@@ | 2019-04-28 15:50:10,974 | 2822 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2014 已创建！ 
+@@ | 2019-04-28 15:50:10,980 | 2828 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:26 
+@@ | 2019-04-28 15:50:11,538 | 3386 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-06 12:35:41,014 | 1326 | [background-preinit] | INFO  | o.h.validator.internal.util.Version | -HV000001: Hibernate Validator 5.3.0.Final 
+@@ | 2019-05-06 12:35:41,139 | 1451 | [main] | INFO  | com.bl.EsToHDFS | -Starting EsToHDFS on ZGDKY-180027 with PID 33076 (F:\Works\BulkLoad\EsToHDFS\target\classes started by Administrator in F:\Works\BulkLoad) 
+@@ | 2019-05-06 12:35:41,139 | 1451 | [main] | INFO  | com.bl.EsToHDFS | -The following profiles are active: hbase 
+@@ | 2019-05-06 12:35:41,186 | 1498 | [main] | INFO  | o.s.c.a.AnnotationConfigApplicationContext | -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68c72235: startup date [Mon May 06 12:35:41 CST 2019]; root of context hierarchy 
+@@ | 2019-05-06 12:35:43,073 | 3385 | [main] | INFO  | com.bl.run.DataController | -电厂:2681 查询天数:365 查询测点数:7270 
+@@ | 2019-05-06 12:35:43,136 | 3448 | [main] | INFO  | com.bl.run.DataController | -相对路径下 2018 目录已创建！ 
+@@ | 2019-05-06 12:35:44,665 | 4977 | [main] | INFO  | com.bl.run.DataController | -HDFS 上文件目录 2018 已创建！ 
+@@ | 2019-05-06 12:35:44,696 | 5008 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -分批次查询:37 
+@@ | 2019-05-06 12:35:45,460 | 5772 | [main] | INFO  | com.bl.source.util.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-06 12:36:20,223 | 40535 | [main] | INFO  | com.bl.source.file.CreateFileUtil | -2681-2018-01-01.txt 文件已创建！ 
+@@ | 2019-05-06 12:36:20,395 | 40707 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2681===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-06 12:36:52,424 | 72736 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2681===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-06 12:40:38,299 | 298611 | [main] | INFO  | c.bl.source.invert.DayManyQueryData | -===== 电厂:2681===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
