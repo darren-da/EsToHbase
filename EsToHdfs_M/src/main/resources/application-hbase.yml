@@ -1,0 +1,28 @@
+hbase:
+    #  http://10.1.116.13:8888/JsonDataService/getHisAndRealSpanValue   # 26 27 28
+    #  http://10.1.116.26:8089/JsonDataService/getHisAndRealSpanValue
+    url: http://10.1.116.27:8089/JsonDataService/getHisAndRealSpanValue
+spring:
+    table:
+      #此表记录异常测点
+        errorTags: test_hbase_data_errortags_test  # test_hbase_data_errorTags 一个测点数据已经超出了范围（数据过多导致异常）
+
+        novalue: test_hbase_data_novalue_tags_test  # test_hbase_data_novalue_tags
+        exception: test_hbase_data_exeception_tags_test # test_hbase_data_exeception_tags
+        nocreate: test_hbase_data_nocreate_tags_test  # test_hbase_data_nocreate_tags
+        #log: test_hbase_data_log  # test_hbase_data_log
+        log: test_hbase_data_log_test
+    datasource:
+        url: jdbc:mysql://10.1.116.10:3306/test?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
+        username: gh_sjzl
+        password: GuoHuadcloud@2018
+        driver-class-name: com.mysql.jdbc.Driver
+pi:
+    plant: 2689 # 三河电厂-2681   宁海电厂-2689  定州电厂-2707 台山电厂-2713  （各个电厂依次跑一遍）
+    # 最大不超过200
+    bulk: 200
+    startTime: 2013-01-01  #（所导入数据的执行时间点）
+    endTime: 2013-12-31
+    requestNum: 10  # 循环请求次数
+    timeIntervalNumber: 1440 # 60*24
+    url: http://10.1.116.27:8089/JsonDataService/getHisAndRealSpanValue

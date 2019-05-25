@@ -1,0 +1,864 @@
+@@ | 2019-05-23 19:45:48,652 | 613  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 95412 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-23 19:45:48,655 | 616  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-23 19:45:49,556 | 1517 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8080 (http) 
+@@ | 2019-05-23 19:45:49,569 | 1530 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-23 19:45:49,578 | 1539 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-23 19:45:49,579 | 1540 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-23 19:45:49,671 | 1632 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-23 19:45:49,672 | 1633 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 939 ms 
+@@ | 2019-05-23 19:45:49,919 | 1880 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-23 19:45:50,038 | 1999 | [main] | WARN  | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext | -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver 
+@@ | 2019-05-23 19:45:50,039 | 2000 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Shutting down ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-23 19:45:50,042 | 2003 | [main] | INFO  | o.a.catalina.core.StandardService | -Stopping service [Tomcat] 
+@@ | 2019-05-23 19:45:50,073 | 2034 | [main] | ERROR | o.s.boot.SpringApplication | -Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.atguohua.estohdfs.EstohdfsApplication.main(EstohdfsApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:224)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:44)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:88)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari$$EnhancerBySpringCGLIB$$362dba8e.CGLIB$dataSource$0(<generated>)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari$$EnhancerBySpringCGLIB$$362dba8e$$FastClassBySpringCGLIB$$95fd3cf2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari$$EnhancerBySpringCGLIB$$362dba8e.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+@@ | 2019-05-23 19:50:21,688 | 695  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 6844 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-23 19:50:21,691 | 698  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-23 19:50:22,742 | 1749 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8080 (http) 
+@@ | 2019-05-23 19:50:22,755 | 1762 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-23 19:50:22,764 | 1771 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-23 19:50:22,764 | 1771 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-23 19:50:22,880 | 1887 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-23 19:50:22,881 | 1888 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1064 ms 
+@@ | 2019-05-23 19:50:23,087 | 2094 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-23 19:50:23,460 | 2467 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-23 19:50:23,497 | 2504 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-23 19:50:23,514 | 2521 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8080 (http) with context path '' 
+@@ | 2019-05-23 19:50:23,517 | 2524 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.425 seconds (JVM running for 3.639) 
+@@ | 2019-05-23 19:53:05,145 | 676  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 50700 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-23 19:53:05,148 | 679  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-23 19:53:06,140 | 1671 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8080 (http) 
+@@ | 2019-05-23 19:53:06,153 | 1684 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-23 19:53:06,162 | 1693 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-23 19:53:06,163 | 1694 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-23 19:53:06,280 | 1811 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-23 19:53:06,280 | 1811 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1037 ms 
+@@ | 2019-05-23 19:53:06,492 | 2023 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-23 19:53:06,749 | 2280 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-23 19:53:06,775 | 2306 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-23 19:53:06,790 | 2321 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8080 (http) with context path '' 
+@@ | 2019-05-23 19:53:06,793 | 2324 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.2 seconds (JVM running for 3.375) 
+@@ | 2019-05-23 20:03:23,451 | 618982 | [http-nio-8080-exec-1] | INFO  | o.a.coyote.http11.Http11Processor | -Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level. 
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:414)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+@@ | 2019-05-24 13:00:04,726 | 1642 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 52108 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 13:00:04,731 | 1647 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 13:00:06,464 | 3380 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8080 (http) 
+@@ | 2019-05-24 13:00:06,486 | 3402 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-24 13:00:06,503 | 3419 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 13:00:06,504 | 3420 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 13:00:06,685 | 3601 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 13:00:06,685 | 3601 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1816 ms 
+@@ | 2019-05-24 13:00:07,112 | 4028 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 13:00:07,396 | 4312 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8080"] 
+@@ | 2019-05-24 13:00:07,461 | 4377 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 13:00:07,498 | 4414 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8080 (http) with context path '' 
+@@ | 2019-05-24 13:00:07,501 | 4417 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.837 seconds (JVM running for 5.904) 
+@@ | 2019-05-24 13:05:44,840 | 341756 | [http-nio-8080-exec-1] | INFO  | o.a.coyote.http11.Http11Processor | -Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level. 
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:414)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+@@ | 2019-05-24 13:32:13,933 | 714  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 73012 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 13:32:13,937 | 718  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 13:32:15,106 | 1887 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 13:32:15,118 | 1899 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 13:32:15,127 | 1908 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 13:32:15,127 | 1908 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 13:32:15,243 | 2024 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 13:32:15,244 | 2025 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1148 ms 
+@@ | 2019-05-24 13:32:15,494 | 2275 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 13:32:15,701 | 2482 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 13:32:15,727 | 2508 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 13:32:15,742 | 2523 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 13:32:15,745 | 2526 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.405 seconds (JVM running for 3.522) 
+@@ | 2019-05-24 14:02:58,877 | 673  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 34024 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 14:02:58,881 | 677  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 14:03:00,055 | 1851 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 14:03:00,067 | 1863 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:03:00,075 | 1871 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 14:03:00,076 | 1872 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 14:03:00,190 | 1986 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 14:03:00,190 | 1986 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1179 ms 
+@@ | 2019-05-24 14:03:00,469 | 2265 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 14:03:00,681 | 2477 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:03:00,707 | 2503 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 14:03:00,722 | 2518 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 14:03:00,724 | 2520 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.409 seconds (JVM running for 3.58) 
+@@ | 2019-05-24 14:03:45,717 | 47513 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:03:45,718 | 47514 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:03:45,732 | 47528 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 14 ms 
+@@ | 2019-05-24 14:03:45,785 | 47581 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-24 14:03:48,460 | 50256 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-24 14:03:48,481 | 50277 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-24 14:05:21,972 | 692  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 46016 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 14:05:21,976 | 696  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 14:05:23,173 | 1893 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 14:05:23,185 | 1905 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:05:23,193 | 1913 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 14:05:23,194 | 1914 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 14:05:23,312 | 2032 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 14:05:23,312 | 2032 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1143 ms 
+@@ | 2019-05-24 14:05:23,567 | 2287 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 14:05:23,782 | 2502 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:05:23,808 | 2528 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 14:05:23,824 | 2544 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 14:05:23,826 | 2546 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.44 seconds (JVM running for 3.712) 
+@@ | 2019-05-24 14:06:07,243 | 45963 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:06:07,243 | 45963 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:06:07,249 | 45969 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 5 ms 
+@@ | 2019-05-24 14:06:07,278 | 45998 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-24 14:06:08,343 | 47063 | [http-nio-8888-exec-2] | ERROR | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Exception during pool initialization. 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:984)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1095)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:370)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:451)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:461)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:489)
+	at com.atguohua.estohdfs.run.DataRun.sendData(DataRun.java:70)
+	at com.atguohua.estohdfs.controller.PublishController.getPIData(PublishController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+@@ | 2019-05-24 14:22:48,830 | 640  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 82308 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 14:22:48,834 | 644  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 14:22:50,066 | 1876 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 14:22:50,080 | 1890 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:22:50,089 | 1899 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 14:22:50,090 | 1900 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 14:22:50,218 | 2028 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 14:22:50,219 | 2029 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1213 ms 
+@@ | 2019-05-24 14:22:50,499 | 2309 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 14:22:50,793 | 2603 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:22:50,821 | 2631 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 14:22:50,837 | 2647 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 14:22:50,840 | 2650 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.54 seconds (JVM running for 3.7) 
+@@ | 2019-05-24 14:22:52,943 | 4753 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:22:52,944 | 4754 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:22:52,950 | 4760 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 6 ms 
+@@ | 2019-05-24 14:22:52,980 | 4790 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-24 14:22:55,088 | 6898 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-24 14:22:55,109 | 6919 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-24 14:22:57,944 | 9754 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂：2689查询天数：1查询测点数据：2713 
+@@ | 2019-05-24 14:22:58,001 | 9811 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-24 14:22:59,361 | 11171 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-24 14:23:00,144 | 11954 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-24 14:26:16,040 | 699  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 27044 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 14:26:16,044 | 703  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 14:26:17,169 | 1828 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 14:26:17,184 | 1843 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:26:17,194 | 1853 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 14:26:17,194 | 1853 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 14:26:17,318 | 1977 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 14:26:17,318 | 1977 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1124 ms 
+@@ | 2019-05-24 14:26:17,603 | 2262 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 14:26:17,873 | 2532 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:26:17,904 | 2563 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 14:26:17,921 | 2580 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 14:26:17,924 | 2583 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.469 seconds (JVM running for 3.84) 
+@@ | 2019-05-24 14:26:21,420 | 6079 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:26:21,421 | 6080 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:26:21,427 | 6086 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 6 ms 
+@@ | 2019-05-24 14:26:21,457 | 6116 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-24 14:26:23,921 | 8580 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-24 14:26:23,942 | 8601 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-24 14:26:26,801 | 11460 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂：2689  本次查询天数：1查询测点数为：2713个测点 
+@@ | 2019-05-24 14:26:26,802 | 11461 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-24 14:26:27,357 | 12016 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-24 14:26:27,967 | 12626 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-24 14:27:52,634 | 703  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 23740 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 14:27:52,638 | 707  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 14:27:53,840 | 1909 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 14:27:53,853 | 1922 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:27:53,861 | 1930 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 14:27:53,862 | 1931 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 14:27:53,970 | 2039 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 14:27:53,970 | 2039 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1170 ms 
+@@ | 2019-05-24 14:27:54,221 | 2290 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 14:27:54,446 | 2515 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:27:54,472 | 2541 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 14:27:54,486 | 2555 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 14:27:54,489 | 2558 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.445 seconds (JVM running for 3.767) 
+@@ | 2019-05-24 14:27:57,554 | 5623 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:27:57,555 | 5624 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:27:57,626 | 5695 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 71 ms 
+@@ | 2019-05-24 14:27:57,655 | 5724 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-24 14:27:58,675 | 6744 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-24 14:27:58,699 | 6768 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-24 14:28:00,753 | 8822 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689  本次查询天数：1天 查询测点数为：2713个测点 
+@@ | 2019-05-24 14:28:00,754 | 8823 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-24 14:28:01,315 | 9384 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-24 14:28:01,932 | 10001 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-24 14:28:14,817 | 22886 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:29:37,964 | 951  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 29612 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-24 14:29:37,968 | 955  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-24 14:29:39,382 | 2369 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-24 14:29:39,397 | 2384 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:29:39,408 | 2395 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-24 14:29:39,408 | 2395 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-24 14:29:39,542 | 2529 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-24 14:29:39,543 | 2530 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1531 ms 
+@@ | 2019-05-24 14:29:39,809 | 2796 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-24 14:29:40,049 | 3036 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-24 14:29:40,075 | 3062 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-24 14:29:40,090 | 3077 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-24 14:29:40,093 | 3080 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.926 seconds (JVM running for 4.466) 
+@@ | 2019-05-24 14:29:43,551 | 6538 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:29:43,551 | 6538 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-24 14:29:43,557 | 6544 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 5 ms 
+@@ | 2019-05-24 14:29:43,587 | 6574 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-24 14:29:44,722 | 7709 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-24 14:29:44,745 | 7732 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-24 14:29:46,853 | 9840 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:1天 查询测点数为:2713个测点 
+@@ | 2019-05-24 14:29:46,854 | 9841 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-24 14:29:47,449 | 10436 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-24 14:29:48,070 | 11057 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-24 14:29:59,013 | 22000 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:30:10,161 | 33148 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:30:20,708 | 43695 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:30:34,144 | 57131 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:30:47,616 | 70603 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:30:57,155 | 80142 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:31:16,956 | 99943 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:31:31,011 | 113998 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:31:45,841 | 128828 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:31:55,209 | 138196 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:32:06,826 | 149813 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:32:19,676 | 162663 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:32:33,130 | 176117 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:32:47,703 | 190690 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-24 14:32:47,703 | 190690 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-01插入完成  ============ 
+@@ | 2019-05-24 14:32:47,704 | 190691 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-24 14:33:43,914 | 246901 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-01.txt 
+@@ | 2019-05-24 14:33:43,918 | 246905 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-01.txt 已删除！ 
+@@ | 2019-05-24 14:33:43,919 | 246906 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-24 14:33:43,920 | 246907 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-01,的相关数据信息准备存入相应的mysql中。。。。。。。。。。。。 
+@@ | 2019-05-24 14:33:45,669 | 248656 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-24 14:33:45,796 | 248783 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-24 14:33:43 ,任务结束时间:2019-05-24 14:33:43 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-01 ,总耗时(毫秒) 1750 ,其中查询数据耗时(毫秒) 170977 ,数据转换时间耗时(毫秒) -169227,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:15:36,877 | 2637 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 28224 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 10:15:36,890 | 2650 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 10:15:40,269 | 6029 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 10:15:40,284 | 6044 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 10:15:40,293 | 6053 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 10:15:40,294 | 6054 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 10:15:40,451 | 6211 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 10:15:40,451 | 6211 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 3489 ms 
+@@ | 2019-05-25 10:15:40,820 | 6580 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 10:15:41,104 | 6864 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 10:15:41,161 | 6921 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 10:15:41,190 | 6950 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 10:15:41,193 | 6953 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 6.104 seconds (JVM running for 8.868) 
+@@ | 2019-05-25 10:16:02,915 | 28675 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 10:16:02,915 | 28675 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 10:16:02,933 | 28693 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 17 ms 
+@@ | 2019-05-25 10:16:02,987 | 28747 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 10:16:04,947 | 30707 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 10:16:04,956 | 30716 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 10:16:05,669 | 31429 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:5天 查询测点数为:2713个测点 
+@@ | 2019-05-25 10:16:05,678 | 31438 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 10:16:07,000 | 32760 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:16:07,764 | 33524 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 10:16:27,415 | 53175 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:16:36,526 | 62286 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:16:44,020 | 69780 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:16:54,941 | 80701 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:17:04,800 | 90560 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:17:12,263 | 98023 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:17:30,344 | 116104 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:17:43,565 | 129325 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:17:53,402 | 139162 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:18:01,655 | 147415 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:18:10,376 | 156136 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:18:20,231 | 165991 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:18:31,849 | 177609 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:18:45,743 | 191503 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:18:45,744 | 191504 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-01插入完成  ============ 
+@@ | 2019-05-25 10:18:45,744 | 191504 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 10:19:41,331 | 247091 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-01.txt 
+@@ | 2019-05-25 10:19:41,334 | 247094 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-01.txt 已删除！ 
+@@ | 2019-05-25 10:19:41,335 | 247095 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 10:19:41,336 | 247096 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-01,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 10:19:43,856 | 249616 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 10:19:43,889 | 249649 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 10:19:41 ,任务结束时间:2019-05-25 10:19:41 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-05 ,总耗时(毫秒) 2521 ,其中查询数据耗时(毫秒) 149412 ,数据转换时间耗时(毫秒) -146891,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:19:43,894 | 249654 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:19:57,091 | 262851 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.CreateFileUtil | -2689-2018-01-02.txt 文件已创建！ 
+@@ | 2019-05-25 10:19:57,199 | 262959 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:20:05,324 | 271084 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:20:13,193 | 278953 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:20:21,748 | 287508 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:20:31,417 | 297177 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:20:38,663 | 304423 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:20:51,466 | 317226 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:03,330 | 329090 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:11,006 | 336766 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:19,394 | 345154 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:27,305 | 353065 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:35,910 | 361670 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:45,555 | 371315 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:56,485 | 382245 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:21:56,485 | 382245 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-02插入完成  ============ 
+@@ | 2019-05-25 10:21:56,485 | 382245 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 10:22:20,524 | 406284 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-02.txt 
+@@ | 2019-05-25 10:22:20,525 | 406285 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-02.txt 已删除！ 
+@@ | 2019-05-25 10:22:20,526 | 406286 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 10:22:20,527 | 406287 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-02,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 10:22:24,437 | 410197 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 10:22:24,454 | 410214 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 10:22:20 ,任务结束时间:2019-05-25 10:22:20 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-05 ,总耗时(毫秒) 3910 ,其中查询数据耗时(毫秒) 273535 ,数据转换时间耗时(毫秒) -269625,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:22:24,459 | 410219 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:22:37,673 | 423433 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.CreateFileUtil | -2689-2018-01-03.txt 文件已创建！ 
+@@ | 2019-05-25 10:22:37,803 | 423563 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:22:44,901 | 430661 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:22:51,680 | 437440 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:22:59,622 | 445382 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:23:08,503 | 454263 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:23:16,905 | 462665 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:23:29,161 | 474921 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:23:40,035 | 485795 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:23:48,185 | 493945 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:23:54,962 | 500722 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:24:01,787 | 507547 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:24:10,776 | 516536 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:24:20,072 | 525832 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:24:32,757 | 538517 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-03 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:24:32,758 | 538518 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-03插入完成  ============ 
+@@ | 2019-05-25 10:24:32,758 | 538518 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 10:24:56,549 | 562309 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-03.txt 
+@@ | 2019-05-25 10:24:56,599 | 562359 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-03.txt 已删除！ 
+@@ | 2019-05-25 10:24:56,599 | 562359 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 10:24:56,600 | 562360 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-03,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 10:24:58,532 | 564292 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 10:24:58,565 | 564325 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 10:24:56 ,任务结束时间:2019-05-25 10:24:56 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-05 ,总耗时(毫秒) 1933 ,其中查询数据耗时(毫秒) 393283 ,数据转换时间耗时(毫秒) -391350,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:24:58,568 | 564328 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:25:11,644 | 577404 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.CreateFileUtil | -2689-2018-01-04.txt 文件已创建！ 
+@@ | 2019-05-25 10:25:11,778 | 577538 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:25:19,613 | 585373 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:25:26,346 | 592106 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:25:33,732 | 599492 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:25:43,962 | 609722 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:25:50,691 | 616451 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:00,827 | 626587 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:10,963 | 636723 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:21,156 | 646916 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:28,351 | 654111 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:35,781 | 661541 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:44,468 | 670228 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:26:52,758 | 678518 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:27:02,788 | 688548 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-04 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:27:02,788 | 688548 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-04插入完成  ============ 
+@@ | 2019-05-25 10:27:02,789 | 688549 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 10:27:27,055 | 712815 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-04.txt 
+@@ | 2019-05-25 10:27:27,058 | 712818 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-04.txt 已删除！ 
+@@ | 2019-05-25 10:27:27,059 | 712819 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 10:27:27,059 | 712819 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-04,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 10:27:29,414 | 715174 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 10:27:29,427 | 715187 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 10:27:27 ,任务结束时间:2019-05-25 10:27:27 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-05 ,总耗时(毫秒) 2355 ,其中查询数据耗时(毫秒) 508938 ,数据转换时间耗时(毫秒) -506583,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:27:29,432 | 715192 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:27:41,256 | 727016 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.CreateFileUtil | -2689-2018-01-05.txt 文件已创建！ 
+@@ | 2019-05-25 10:27:41,363 | 727123 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:27:48,313 | 734073 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:27:56,143 | 741903 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:04,745 | 750505 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:13,819 | 759579 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:19,680 | 765440 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:30,154 | 775914 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:40,521 | 786281 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:48,596 | 794356 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:28:55,139 | 800899 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:29:02,639 | 808399 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:29:10,601 | 816361 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:29:20,537 | 826297 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:29:29,003 | 834763 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-05 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:29:29,003 | 834763 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-05插入完成  ============ 
+@@ | 2019-05-25 10:29:29,004 | 834764 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 10:29:53,698 | 859458 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-05.txt 
+@@ | 2019-05-25 10:29:53,729 | 859489 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-05.txt 已删除！ 
+@@ | 2019-05-25 10:29:53,729 | 859489 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 10:29:53,729 | 859489 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-05,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 10:29:54,634 | 860394 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 10:29:54,648 | 860408 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 10:29:53 ,任务结束时间:2019-05-25 10:29:53 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-05 ,总耗时(毫秒) 905 ,其中查询数据耗时(毫秒) 619946 ,数据转换时间耗时(毫秒) -619041,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:55:59,365 | 678  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 46020 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 10:55:59,370 | 683  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 10:56:00,512 | 1825 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 10:56:00,524 | 1837 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 10:56:00,533 | 1846 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 10:56:00,533 | 1846 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 10:56:00,643 | 1956 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 10:56:00,644 | 1957 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1169 ms 
+@@ | 2019-05-25 10:56:00,899 | 2212 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 10:56:01,115 | 2428 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 10:56:01,142 | 2455 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 10:56:01,156 | 2469 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 10:56:01,159 | 2472 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.363 seconds (JVM running for 3.612) 
+@@ | 2019-05-25 10:56:11,186 | 12499 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 10:56:11,186 | 12499 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 10:56:11,192 | 12505 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 6 ms 
+@@ | 2019-05-25 10:56:11,222 | 12535 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 10:56:13,606 | 14919 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 10:56:13,611 | 14924 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 10:56:14,758 | 16071 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 10:56:14,759 | 16072 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 10:56:15,315 | 16628 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:56:15,923 | 17236 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 10:56:34,928 | 36241 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:56:42,464 | 43777 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:56:49,818 | 51131 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:56:58,808 | 60121 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:07,355 | 68668 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:13,406 | 74719 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:23,915 | 85228 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:35,123 | 96436 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:43,796 | 105109 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:51,212 | 112525 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:57:57,951 | 119264 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:58:05,387 | 126700 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:58:12,041 | 133354 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:58:21,732 | 143045 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 10:58:21,733 | 143046 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-01插入完成  ============ 
+@@ | 2019-05-25 10:58:21,733 | 143046 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 10:59:42,164 | 223477 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-01.txt 
+@@ | 2019-05-25 10:59:42,272 | 223585 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-01.txt 已删除！ 
+@@ | 2019-05-25 10:59:42,272 | 223585 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 10:59:42,272 | 223585 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-01,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 10:59:43,859 | 225172 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 10:59:46,609 | 227922 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 10:59:42 ,任务结束时间:2019-05-25 10:59:42 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-02 ,总耗时(毫秒) 1587 ,其中查询数据耗时(毫秒) 117409 ,数据转换时间耗时(毫秒) -115822,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 10:59:46,614 | 227927 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 10:59:56,951 | 238264 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:03,726 | 245039 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:11,392 | 252705 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:18,666 | 259979 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:26,881 | 268194 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:32,691 | 274004 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:42,794 | 284107 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:52,560 | 293873 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:00:59,824 | 301137 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:01:06,010 | 307323 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:01:14,629 | 315942 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:01:24,143 | 325456 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:01:30,214 | 331527 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:01:39,526 | 340839 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 11:01:39,526 | 340839 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-02插入完成  ============ 
+@@ | 2019-05-25 11:01:39,526 | 340839 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 11:02:27,194 | 388507 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-02.txt 
+@@ | 2019-05-25 11:02:27,270 | 388583 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-02.txt 已删除！ 
+@@ | 2019-05-25 11:02:27,271 | 388584 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 11:02:27,271 | 388584 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-02,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 11:02:27,460 | 388773 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 11:02:28,564 | 389877 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 11:02:27 ,任务结束时间:2019-05-25 11:02:27 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-02 ,总耗时(毫秒) 188 ,其中查询数据耗时(毫秒) 221880 ,数据转换时间耗时(毫秒) -221692,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 12:21:37,213 | 1043 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 82496 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 12:21:37,218 | 1048 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 12:21:38,524 | 2354 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 12:21:38,540 | 2370 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 12:21:38,552 | 2382 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 12:21:38,553 | 2383 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 12:21:38,701 | 2531 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 12:21:38,701 | 2531 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1379 ms 
+@@ | 2019-05-25 12:21:39,255 | 3085 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 12:21:39,582 | 3412 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 12:21:39,625 | 3455 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 12:21:39,645 | 3475 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 12:21:39,649 | 3479 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.278 seconds (JVM running for 6.18) 
+@@ | 2019-05-25 12:21:55,470 | 19300 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 12:21:55,470 | 19300 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 12:21:55,477 | 19307 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 7 ms 
+@@ | 2019-05-25 12:21:55,514 | 19344 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 12:21:57,825 | 21655 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 12:21:57,833 | 21663 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 12:21:57,908 | 21738 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 12:21:57,909 | 21739 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 12:21:59,202 | 23032 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 12:21:59,854 | 23684 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 12:22:10,257 | 34087 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.CreateFileUtil | -2689-2018-01-01.txt 文件已创建！ 
+@@ | 2019-05-25 12:22:10,391 | 34221 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 12:22:17,013 | 40843 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 12:22:23,792 | 47622 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 12:22:32,585 | 56415 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 12:22:40,245 | 64075 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 12:22:45,743 | 69573 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 12:24:28,397 | 1080 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 79004 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 12:24:28,402 | 1085 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 12:24:30,104 | 2787 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 12:24:30,118 | 2801 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 12:24:30,128 | 2811 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 12:24:30,128 | 2811 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 12:24:30,251 | 2934 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 12:24:30,251 | 2934 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1567 ms 
+@@ | 2019-05-25 12:24:30,564 | 3247 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 12:24:30,823 | 3506 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 12:24:30,855 | 3538 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 12:24:30,872 | 3555 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 12:24:30,876 | 3559 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.349 seconds (JVM running for 5.185) 
+@@ | 2019-05-25 12:24:45,480 | 18163 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 12:24:45,481 | 18164 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 12:24:45,487 | 18170 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 6 ms 
+@@ | 2019-05-25 12:24:45,523 | 18206 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 12:24:47,040 | 19723 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 12:24:47,050 | 19733 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 12:24:48,822 | 21505 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 12:24:48,823 | 21506 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 12:24:49,476 | 22159 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 12:24:50,092 | 22775 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 12:25:51,203 | 83886 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s72ms854µs569ns). 
+@@ | 2019-05-25 12:28:17,853 | 230536 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m45s622ms259µs928ns). 
+@@ | 2019-05-25 12:31:58,283 | 450966 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m40s423ms459µs432ns). 
+@@ | 2019-05-25 12:33:04,671 | 517354 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s386ms489µs8ns). 
+@@ | 2019-05-25 12:38:35,439 | 848122 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m30s758ms204µs463ns). 
+@@ | 2019-05-25 12:38:58,860 | 1032 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 15748 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 12:38:58,865 | 1037 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 12:39:00,367 | 2539 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 12:39:00,382 | 2554 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 12:39:00,393 | 2565 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 12:39:00,393 | 2565 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 12:39:00,543 | 2715 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 12:39:00,544 | 2716 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1539 ms 
+@@ | 2019-05-25 12:39:00,900 | 3072 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 12:39:01,196 | 3368 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 12:39:01,229 | 3401 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 12:39:01,248 | 3420 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 12:39:01,253 | 3425 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.239 seconds (JVM running for 4.898) 
+@@ | 2019-05-25 12:39:12,004 | 14176 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 12:39:12,004 | 14176 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 12:39:12,011 | 14183 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 7 ms 
+@@ | 2019-05-25 12:39:12,046 | 14218 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 12:39:12,828 | 15000 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 12:39:12,835 | 15007 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 12:39:14,773 | 16945 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 12:39:14,775 | 16947 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 12:39:15,403 | 17575 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 12:39:16,048 | 18220 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 12:40:08,426 | 70598 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s489ms630µs62ns). 
+@@ | 2019-05-25 12:41:38,480 | 160652 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s51ms184µs6ns). 
+@@ | 2019-05-25 12:42:27,315 | 209487 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s833ms57µs111ns). 
+@@ | 2019-05-25 14:08:11,660 | 5353832 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h25m44s191ms154µs260ns). 
+@@ | 2019-05-25 14:13:26,975 | 5669147 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m15s306ms14µs478ns). 
+@@ | 2019-05-25 14:23:29,036 | 6271208 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m2s42ms576µs295ns). 
+@@ | 2019-05-25 14:24:27,944 | 6330116 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s906ms532µs). 
+@@ | 2019-05-25 14:25:30,780 | 6392952 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s833ms684µs410ns). 
+@@ | 2019-05-25 14:25:37,315 | 870  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 46152 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 14:25:37,319 | 874  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 14:25:38,747 | 2302 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 14:25:38,763 | 2318 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 14:25:38,772 | 2327 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 14:25:38,772 | 2327 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 14:25:38,893 | 2448 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 14:25:38,894 | 2449 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1527 ms 
+@@ | 2019-05-25 14:25:39,215 | 2770 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 14:25:39,499 | 3054 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 14:25:39,528 | 3083 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 14:25:39,546 | 3101 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 14:25:39,549 | 3104 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.964 seconds (JVM running for 4.564) 
+@@ | 2019-05-25 14:25:41,624 | 5179 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 14:25:41,625 | 5180 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 14:25:41,631 | 5186 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 6 ms 
+@@ | 2019-05-25 14:25:41,666 | 5221 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 14:25:42,391 | 5946 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 14:25:42,398 | 5953 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 14:25:42,453 | 6008 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 14:25:42,453 | 6008 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 14:25:43,090 | 6645 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 14:25:43,731 | 7286 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 14:26:16,015 | 39570 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:26:45,741 | 69296 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:27:05,936 | 89491 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:27:29,914 | 113469 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:27:42,035 | 125590 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:27:52,851 | 136406 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:28:06,845 | 150400 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:28:21,029 | 164584 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:29:36,034 | 239589 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:30:39,432 | 302987 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:31:13,059 | 336614 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:31:43,999 | 367554 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:31:58,300 | 381855 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:32:23,909 | 407464 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:32:23,909 | 407464 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-01插入完成  ============ 
+@@ | 2019-05-25 14:32:23,909 | 407464 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 14:32:58,743 | 442298 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-01.txt 
+@@ | 2019-05-25 14:32:58,746 | 442301 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-01.txt 已删除！ 
+@@ | 2019-05-25 14:32:58,747 | 442302 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 14:32:58,747 | 442302 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-01,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 14:32:59,945 | 443500 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 14:33:02,817 | 446372 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 14:32:58 ,任务结束时间:2019-05-25 14:32:58 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-02 ,总耗时(毫秒) 1198 ,其中查询数据耗时(毫秒) 102128 ,数据转换时间耗时(毫秒) -100930,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 14:33:02,823 | 446378 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 14:34:13,627 | 517182 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.CreateFileUtil | -2689-2018-01-02.txt 文件已创建！ 
+@@ | 2019-05-25 14:34:13,801 | 517356 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:34:37,106 | 540661 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:34:46,453 | 550008 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:35:01,194 | 564749 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:35:15,169 | 578724 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:35:47,518 | 611073 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:36:16,242 | 639797 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 14:37:05,525 | 1202 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 62204 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 14:37:05,530 | 1207 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 14:37:07,340 | 3017 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 14:37:07,358 | 3035 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 14:37:07,370 | 3047 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 14:37:07,371 | 3048 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 14:37:07,514 | 3191 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 14:37:07,514 | 3191 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1666 ms 
+@@ | 2019-05-25 14:37:07,880 | 3557 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 14:37:08,200 | 3877 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 14:37:08,244 | 3921 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 14:37:08,264 | 3941 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 14:37:08,267 | 3944 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.741 seconds (JVM running for 5.469) 
+@@ | 2019-05-25 14:37:13,123 | 8800 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 14:37:13,124 | 8801 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 14:37:13,132 | 8809 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 8 ms 
+@@ | 2019-05-25 14:37:13,173 | 8850 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 14:37:14,332 | 10009 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 14:37:14,339 | 10016 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 14:37:17,228 | 12905 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 14:37:17,228 | 12905 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 14:37:18,008 | 13685 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 14:37:18,769 | 14446 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 14:54:36,733 | 1052410 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m22s253ms903µs481ns). 
+@@ | 2019-05-25 14:55:09,057 | 1150 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 41092 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 14:55:09,062 | 1155 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 14:55:10,321 | 2414 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 14:55:10,336 | 2429 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 14:55:10,348 | 2441 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 14:55:10,349 | 2442 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 14:55:10,488 | 2581 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 14:55:10,489 | 2582 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1368 ms 
+@@ | 2019-05-25 14:55:10,857 | 2950 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 14:55:11,170 | 3263 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 14:55:11,213 | 3306 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 14:55:11,236 | 3329 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 14:55:11,239 | 3332 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.16 seconds (JVM running for 4.726) 
+@@ | 2019-05-25 14:55:15,461 | 7554 | [http-nio-8888-exec-2] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 14:55:15,462 | 7555 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 14:55:15,469 | 7562 | [http-nio-8888-exec-2] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 7 ms 
+@@ | 2019-05-25 14:55:15,511 | 7604 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 14:55:17,862 | 9955 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 14:55:17,869 | 9962 | [http-nio-8888-exec-2] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 14:55:17,911 | 10004 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 14:55:17,912 | 10005 | [http-nio-8888-exec-2] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 14:55:18,611 | 10704 | [http-nio-8888-exec-2] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 14:55:19,290 | 11383 | [http-nio-8888-exec-2] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 15:06:49,009 | 701102 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m31s17ms141µs937ns). 
+@@ | 2019-05-25 15:07:11,600 | 1140 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 68876 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 15:07:11,605 | 1145 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 15:07:13,346 | 2886 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 15:07:13,365 | 2905 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 15:07:13,376 | 2916 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 15:07:13,377 | 2917 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 15:07:13,525 | 3065 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 15:07:13,526 | 3066 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1719 ms 
+@@ | 2019-05-25 15:07:13,885 | 3425 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 15:07:14,230 | 3770 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 15:07:14,279 | 3819 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 15:07:14,300 | 3840 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 15:07:14,304 | 3844 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 3.65 seconds (JVM running for 5.321) 
+@@ | 2019-05-25 15:07:25,138 | 14678 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 15:07:25,139 | 14679 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 15:07:25,147 | 14687 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 8 ms 
+@@ | 2019-05-25 15:07:25,194 | 14734 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 15:07:25,422 | 14962 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 15:07:25,430 | 14970 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 15:07:26,756 | 16296 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 15:07:26,757 | 16297 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 15:07:27,523 | 17063 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 15:07:28,217 | 17757 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 15:10:06,891 | 176431 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s356ms390µs960ns). 
+@@ | 2019-05-25 15:16:08,946 | 538486 | [HikariPool-1 housekeeper] | WARN  | com.zaxxer.hikari.pool.HikariPool | -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m2s44ms203µs250ns). 
+@@ | 2019-05-25 15:16:15,924 | 784  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 45544 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 15:16:15,929 | 789  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 15:16:17,244 | 2104 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 15:16:17,257 | 2117 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 15:16:17,266 | 2126 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 15:16:17,267 | 2127 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 15:16:17,393 | 2253 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 15:16:17,394 | 2254 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1194 ms 
+@@ | 2019-05-25 15:16:17,665 | 2525 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 15:16:17,901 | 2761 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 15:16:17,930 | 2790 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 15:16:17,946 | 2806 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 15:16:17,949 | 2809 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.685 seconds (JVM running for 3.926) 
+@@ | 2019-05-25 15:17:34,207 | 744  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Starting EstohdfsApplication on ZGDKY-180027 with PID 85536 (F:\Works\EsToHdfs_M\target\classes started by Administrator in F:\Works\EsToHdfs_M) 
+@@ | 2019-05-25 15:17:34,212 | 749  | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -The following profiles are active: hbase 
+@@ | 2019-05-25 15:17:35,572 | 2109 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat initialized with port(s): 8888 (http) 
+@@ | 2019-05-25 15:17:35,585 | 2122 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Initializing ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 15:17:35,595 | 2132 | [main] | INFO  | o.a.catalina.core.StandardService | -Starting service [Tomcat] 
+@@ | 2019-05-25 15:17:35,595 | 2132 | [main] | INFO  | o.a.catalina.core.StandardEngine | -Starting Servlet engine: [Apache Tomcat/9.0.19] 
+@@ | 2019-05-25 15:17:35,713 | 2250 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring embedded WebApplicationContext 
+@@ | 2019-05-25 15:17:35,714 | 2251 | [main] | INFO  | o.s.web.context.ContextLoader | -Root WebApplicationContext: initialization completed in 1231 ms 
+@@ | 2019-05-25 15:17:36,004 | 2541 | [main] | INFO  | o.s.s.c.ThreadPoolTaskExecutor | -Initializing ExecutorService 'applicationTaskExecutor' 
+@@ | 2019-05-25 15:17:36,227 | 2764 | [main] | INFO  | o.a.coyote.http11.Http11NioProtocol | -Starting ProtocolHandler ["http-nio-8888"] 
+@@ | 2019-05-25 15:17:36,256 | 2793 | [main] | INFO  | org.mortbay.log | -Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog 
+@@ | 2019-05-25 15:17:36,273 | 2810 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | -Tomcat started on port(s): 8888 (http) with context path '' 
+@@ | 2019-05-25 15:17:36,276 | 2813 | [main] | INFO  | c.a.estohdfs.EstohdfsApplication | -Started EstohdfsApplication in 2.695 seconds (JVM running for 4.121) 
+@@ | 2019-05-25 15:17:47,712 | 14249 | [http-nio-8888-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+@@ | 2019-05-25 15:17:47,712 | 14249 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Initializing Servlet 'dispatcherServlet' 
+@@ | 2019-05-25 15:17:47,718 | 14255 | [http-nio-8888-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | -Completed initialization in 6 ms 
+@@ | 2019-05-25 15:17:47,748 | 14285 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Starting... 
+@@ | 2019-05-25 15:17:51,022 | 17559 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.pool.PoolBase | -HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I) 
+@@ | 2019-05-25 15:17:51,029 | 17566 | [http-nio-8888-exec-1] | INFO  | com.zaxxer.hikari.HikariDataSource | -HikariPool-1 - Start completed. 
+@@ | 2019-05-25 15:17:55,394 | 21931 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂编号：2689 本次查询天数:2天 查询测点数为:2713个测点 
+@@ | 2019-05-25 15:17:55,397 | 21934 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -相对路径下2018目录已经创建完成！！！ 
+@@ | 2019-05-25 15:17:55,983 | 22520 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 15:17:56,616 | 23153 | [http-nio-8888-exec-1] | INFO  | c.a.estohdfs.utils.HttpClientUtils | -初始化HttpClients 
+@@ | 2019-05-25 15:18:56,796 | 83333 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:19:51,989 | 138526 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:20:34,031 | 180568 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:20:51,754 | 198291 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:21:18,329 | 224866 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 5 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:22:26,209 | 292746 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 6 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:23:52,551 | 379088 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 7 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:24:24,926 | 411463 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 8 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:24:46,635 | 433172 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 9 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:24:58,982 | 445519 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 10 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:26:12,446 | 518983 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 11 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:27:20,117 | 586654 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 12 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:27:34,286 | 600823 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 13 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:27:47,459 | 613996 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-01 ===== ,第 14 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:27:47,460 | 613997 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689 ============ 2018-01-01插入完成  ============ 
+@@ | 2019-05-25 15:27:47,460 | 613997 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -成功数:3870720 ,失败数:0 ,无值的tag数:13 ,当前时间未创建的tag数:12 ,失败的tag数:0,错误的tag数：0 
+@@ | 2019-05-25 15:28:48,208 | 674745 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -localFilePath:/home/hbase/data ,hdfsFilePath:/2018/2689-2018-01-01.txt 
+@@ | 2019-05-25 15:28:48,211 | 674748 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -本地路径下 /home/hbase/data/2018/2689-2018-01-01.txt 已删除！ 
+@@ | 2019-05-25 15:28:48,212 | 674749 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -############################## 
+@@ | 2019-05-25 15:28:48,212 | 674749 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -2018-01-01,的相关数据信息准备存入相应的mysql中 
+@@ | 2019-05-25 15:28:51,953 | 678490 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -开始执行 mapreduce 任务,文件路径:/hbase-data/2018 ，plant:2689 
+@@ | 2019-05-25 15:28:52,026 | 678563 | [http-nio-8888-exec-1] | INFO  | com.atguohua.estohdfs.run.DataRun | -电厂:2689 ,测点数:2713 ,任务开始时间:2019-05-25 15:28:50 ,任务结束时间:2019-05-25 15:28:50 ,数据开始时间:2018-01-01 ,数据结束时间:2018-01-02 ,总耗时(毫秒) 1712 ,其中查询数据耗时(毫秒) 92514 ,数据转换时间耗时(毫秒) -90802,数据写入HBase耗时(毫秒) 0,成功数:3870720,失败数:0,无值的tag数:13,当前时间未创建的tag数:12,失败的tag数:0 
+@@ | 2019-05-25 15:28:52,031 | 678568 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -分批次查询:14 
+@@ | 2019-05-25 15:30:18,898 | 765435 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 1 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:31:27,688 | 834225 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 2 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:31:44,010 | 850547 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 3 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:31:55,820 | 862357 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 4 批次数据插入完成 ===== 
+@@ | 2019-05-25 15:32:12,794 | 879331 | [http-nio-8888-exec-1] | INFO  | c.a.e.queryData.DayManyQueryData | -===== 电厂:2689===== 2018-01-02 ===== ,第 5 批次数据插入完成 ===== 
