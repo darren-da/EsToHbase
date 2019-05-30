@@ -1,0 +1,22 @@
+server:
+  port: 10080
+
+hdfs: #连接hdfs的参数
+  fs.defaultFS: hdfs://node2.gh.swc.hdp:8020
+  HADOOP_USER_NAME: hdfs
+  path:
+    init: /hbase-data/test-ff
+    bulkload.input: /hbase-data/test-input
+    bulkload.output: /hbase-data/test-output
+mysql:
+  insertTableDay: pi_es_hbase_result
+linux:
+  jarPath: "/home/hbase/bulkload/Blk.jar com.mr.HFileDriver"
+  shell: "su - hbase hadoop jar ${linux.jarPath}"
+  tableNamePrefix: "hbase_dev_pi_b_test_"
+spring:
+  datasource:
+    url: jdbc:mysql://10.1.116.10:3306/gh_sjzl_ts?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
+    username: gh_sjzl
+    password: GuoHuadcloud@2018
+    driver-class-name: com.mysql.jdbc.Driver
